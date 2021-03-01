@@ -36,14 +36,14 @@ app.listen(process.env.PORT || 3000, function() {
 });
 
 app.get("/", (_req, res) => {
-  res.render("auth")
+  res.render("login")
 })
 
-app.get("/auth", (_req,res) => {
-    res.render("auth");
+app.get("/register", (_req,res) => {
+    res.render("register");
 })
 
-app.post("/auth/register", (req, res) => {
+app.post("/register", (req, res) => {
     const user = new User({
         name:req.body.name,
         email:req.body.email,
@@ -54,5 +54,13 @@ app.post("/auth/register", (req, res) => {
         if (err) return console.error(err);
         console.log("User saved successfully!");
     });
+    res.redirect("/");
+})
+
+app.get("/login", (_req,res) => {
+    res.render("login");
+})
+
+app.post("/login", (req, res) => {
     res.redirect("/");
 })
