@@ -38,3 +38,7 @@ app.listen(process.env.PORT || 3000, function() {
 app.get("/", (_req, res) => {
   res.render("auth")
 })
+
+app.get("/auth", (res,req) => {
+    res.render("auth");
+})
