@@ -1,30 +1,26 @@
 <%- include("partials/header") %>
 
 <div class="registration-form">
-    <form>
+    <form action="/auth/register" method="post">
         <div class="form-icon">
             <span><i class="icon icon-user"></i></span>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control item" id="username" placeholder="Username">
+            <input type="text" class="form-control item" name="name" placeholder="Full Name">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control item" id="password" placeholder="Password">
+            <input type="text" class="form-control item" name="email" placeholder="Email">
+        <div class="form-group">
+            <input type="password" class="form-control item" name="password" placeholder="Password">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control item" id="email" placeholder="Email">
+            <input type="text" class="form-control item" name="phone" placeholder="Phone Number">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
-        </div>
-        <div class="form-group">
-            <button type="button" class="btn btn-block create-account">Create Account</button>
+            <button type="submit" class="btn btn-block create-account">Create Account</button>
         </div>
     </form>
-    <div class="social-media">
+    <div class="social-media d-none">
         <h5>Sign up with social media</h5>
         <div class="social-icons">
             <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>

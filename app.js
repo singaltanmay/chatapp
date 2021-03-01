@@ -39,6 +39,20 @@ app.get("/", (_req, res) => {
   res.render("auth")
 })
 
-app.get("/auth", (res,req) => {
+app.get("/auth", (_req,res) => {
     res.render("auth");
+})
+
+app.post("/auth/register", (req, res) => {
+    const user = new User({
+        name:req.body.name,
+        email:req.body.email,
+        password:req.body.password,
+        phone:req.body.phone
+    })
+    user.save((err, doc) =>{
+        if (err) return console.error(err);
+        console.log("User saved successfully!");
+    });
+    res.redirect("/");
 })
