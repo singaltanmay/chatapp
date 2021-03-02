@@ -55,7 +55,7 @@ app.post("/register", (req, res) => {
             password: hash,
             phone: req.body.phone
         })
-        user.save((err, doc) => {
+        user.save((err, _doc) => {
             if (err) return console.error(err);
             console.log("User saved successfully!");
         });
@@ -77,5 +77,18 @@ app.post("/login", (req, res) => {
                 if (result) res.redirect("/");
             });
         })
+    });
+})
+
+app.post("/compose", (req, _res) => {
+    const message = new Message({
+        to:req.body.to,
+        from:req.body.from,
+        content:req.body.content
+    });
+
+    message.save((err, _doc) => {
+        if (err) return console.error(err);
+        console.log("Message saved successfully!");
     });
 })
