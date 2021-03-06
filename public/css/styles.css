@@ -124,6 +124,10 @@ body {
   height: 100%;
 }
 
+.chats-container{
+  margin: 0;
+}
+
 .chats-sidebar {
   background-color: var(--surface-color);
   padding: 0%;
