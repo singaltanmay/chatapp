@@ -1,6 +1,7 @@
 :root {
   --background-color: #ccf2f4;
   --surface-color: #f4f9f9;
+  --dark-color: #31326f;
 }
 
 html,
@@ -50,14 +51,15 @@ body {
   align-items: center;
   text-align: center;
   opacity: 90%;
+  color: var(--dark-color);
 }
 
-.registration-form .create-account {
+.create-account {
   border-radius: 30px;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #5791ff;
+  background-color: var(--dark-color);
   border: none;
   color: white;
   margin-top: 20px;
@@ -76,28 +78,32 @@ body {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
 }
 
-.registration-form .social-icons {
+.social-icons {
   margin-top: 30px;
   margin-bottom: 16px;
 }
 
-.registration-form .social-icons a {
+.social-icons a {
   font-size: 23px;
   margin: 0 3px;
-  color: #5691ff;
+  color: var(--dark-color);
   border: 1px solid;
   border-radius: 50%;
   width: 45px;
   display: inline-block;
   height: 45px;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--surface-color);
   line-height: 45px;
 }
 
-.registration-form .social-icons a:hover {
+.social-icons a:hover {
   text-decoration: none;
   opacity: 0.6;
+}
+
+.registration-social-sign-up {
+  margin-top: 32px;
 }
 
 @media (max-width: 576px) {
