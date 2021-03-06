@@ -39,7 +39,7 @@ app.listen(process.env.PORT || 3000, function () {
 });
 
 app.get("/", (_req, res) => {
-    res.render("register")
+    res.render("chats")
 })
 
 app.get("/register", (_req, res) => {

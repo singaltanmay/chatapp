@@ -1,36 +1,38 @@
 <%- include("partials/header") %>
 
-<div class="registration-form">
-    <form action="/register" method="post">
-        <div class="form-icon">
-            <span><i class="icon icon-user"></i></span>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control item" name="name" placeholder="Full Name">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control item" name="email" placeholder="Email">
-            <div class="form-group">
-                <input type="password" class="form-control item" name="password" placeholder="Password">
+<div class="container">
+    <div class="registration-form">
+        <form action="/register" method="post">
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" name="phone" placeholder="Phone Number">
+                <input type="text" class="form-control item" name="name" placeholder="Full Name">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-block create-account">Create Account</button>
+                <input type="text" class="form-control item" name="email" placeholder="Email">
+                <div class="form-group">
+                    <input type="password" class="form-control item" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block create-account">Create Account</button>
+                </div>
+            </div>
+            <a href="/login"><h4 class="registration-form-sign-up">Already have an account? Login</h4></a>
+        </form>
+        <div>
+            <h5>Sign up with social media</h5>
+            <div class="social-icons">
+                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
             </div>
         </div>
-        <a href="/login"><h4 class="registration-form-sign-up">Already have an account? Login</h4></a>
-    </form>
-    <div>
-        <h5>Sign up with social media</h5>
-        <div class="social-icons">
-            <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
-            <a href="#"><i class="icon-social-google" title="Google"></i></a>
-            <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
-        </div>
-    </div>
 
+    </div>
 </div>
 
 <%- include("partials/footer") %>
