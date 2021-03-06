@@ -3,7 +3,17 @@
 <div class="chats-container container">
     <div class="chats-row row">
         <div class="chats-sidebar col-4 d-flex">
-            <p>This is the sidebar</p>
+            <ul class="list-group chats-sidebar-listgroup">
+                <li class="list-group-item">
+                    <%- include("partials/chat-item") %>
+                </li>
+                <li class="list-group-item">
+                    <%- include("partials/chat-item") %>
+                </li>
+                <li class="list-group-item">
+                    <%- include("partials/chat-item") %>
+                </li>
+            </ul>
         </div>
 
         <div class="chats-messages col-8 d-flex">

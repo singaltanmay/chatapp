@@ -126,4 +126,9 @@ body {
 
 .chats-sidebar {
   background-color: var(--surface-color);
+  padding: 0%;
+}
+
+.chats-sidebar-listgroup {
+  width: 100%;
 }
