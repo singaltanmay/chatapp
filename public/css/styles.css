@@ -139,10 +139,10 @@ body {
 
 /* CSS talk bubble */
 .talk-bubble {
-	margin: 40px;
+	margin: 16px;
   display: inline-block;
   position: relative;
-	width: 200px;
+	max-width: 75%;
 	height: auto;
 	background-color: lightyellow;
 }
@@ -176,4 +176,30 @@ body {
 	bottom: -20px;
 	border: 22px solid;
 	border-color: transparent transparent transparent lightyellow;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
 }

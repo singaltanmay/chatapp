@@ -17,8 +17,11 @@
         </div>
 
         <div class="chats-messages col-7 d-flex">
-            <ul class="list-group" style="list-style-type:none">
-                <li">
+            <ul class="list-group" style="list-style-type:none; width: 100%;">
+                <li class="d-flex justify-content-end">
+                    <%- include("partials/chat-bubble") %>
+                </li>
+                <li class="d-flex justify-content-start">
                     <%- include("partials/chat-bubble") %>
                 </li>
             </ul>
