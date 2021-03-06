@@ -1,10 +1,15 @@
+:root {
+  --background-color: #ccf2f4;
+  --surface-color: #f4f9f9;
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  background-color: #dee9ff;
+  background-color: var(--background-color);
 }
 
 .registration-form {
@@ -12,7 +17,7 @@ body {
 }
 
 .registration-form form {
-  background-color: #fff;
+  background-color: var(--surface-color);
   max-width: 600px;
   margin: auto;
   padding: 50px 70px;
@@ -22,7 +27,7 @@ body {
 
 .registration-form .form-icon {
   text-align: center;
-  background-color: #5891ff;
+  background-color: #31326f;
   border-radius: 50%;
   font-size: 40px;
   color: white;
@@ -60,13 +65,13 @@ body {
 
 .registration-form {
   max-width: 600px;
-  background-color: #fff;
+  background-color: var(--surface-color);
   margin: auto;
   padding: 35px 0;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  color: #9fadca;
+  color: #525763;
   border-top: 1px solid #dee9ff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
 }
@@ -111,4 +116,8 @@ body {
 .chats-container,
 .chats-row {
   height: 100%;
+}
+
+.chats-sidebar {
+  background-color: var(--surface-color);
 }
